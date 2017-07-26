@@ -323,7 +323,7 @@ namespace TOTO.Controllers.Admin.Product
                 return RedirectToAction("LoginIndex", "Login");
             }
 
-            if (Session["Thongbao"] != null && Session["Thongbao"] != "")
+            if (Session["Thongbao"] != null || Session["Thongbao"] != "")
             {
 
                 ViewBag.thongbao = Session["Thongbao"].ToString();
@@ -380,17 +380,10 @@ namespace TOTO.Controllers.Admin.Product
                             chuoi += "<input type=\"checkbox\" name=\"chkCre_" + listInfo[j].id + "\" id=\"chkCre_" + listInfo[j].id + "\" />" + listInfo[j].Name + "";
                             chuoi += "</div>";
                         }
-
-
                         chuoi += "</td>";
                         chuoi += "</tr>";
                     }
-                    ViewBag.chuoi = chuoi;
-
-
-
-
-                   
+                    ViewBag.chuoi = chuoi;                   
                 }
                 else
                 {
@@ -426,7 +419,16 @@ namespace TOTO.Controllers.Admin.Product
 
                 }
                 ViewBag.drPrice = lstprice;
-                    return View();
+
+                //address
+                var listaddress = db.tblAddresses.Where(p => p.Active == true).OrderBy(p => p.Ord).ToList();
+                var lstAddress = new List<SelectListItem>();
+                foreach (var item in listaddress)
+                {
+                    lstAddress.Add(new SelectListItem { Text = item.Name, Value = item.id.ToString() });
+                }
+                ViewBag.drAddress = new SelectList(lstAddress, "Value", "Text", 0);
+                return View();
             }
             else
             {
@@ -460,6 +462,11 @@ namespace TOTO.Controllers.Admin.Product
                 string ImageLinkDetail = Collection["ImageLinkDetail"];
                 string imagethum = listarray[listarray.Length - 1];
                 tblproduct.ImageLinkThumb = "/Images/_thumbs/Images/" + imagethum;
+                string idAddress = Collection["drAddress"];
+                if(idAddress!=null && idAddress!="")
+                {
+                    tblproduct.Address = int.Parse(idAddress);
+                }
                 db.tblProducts.Add(tblproduct);
                 db.SaveChanges();
                 var listprro = db.tblProducts.OrderByDescending(p => p.id).Take(1).ToList();
@@ -845,6 +852,20 @@ namespace TOTO.Controllers.Admin.Product
 
                 }
                 ViewBag.drPrice = new SelectList(lstprice, "Value", "Text", tblproduct.Group);
+                string idaddress = tblproduct.Address.ToString();
+                var listaddress = db.tblAddresses.Where(p => p.Active == true).OrderBy(p => p.Ord).ToList();
+                var lstAddress = new List<SelectListItem>();
+                foreach (var item in listaddress)
+                {
+                    lstAddress.Add(new SelectListItem { Text = item.Name, Value = item.id.ToString() });
+                }
+                if(idaddress!=null || idaddress!="")
+                {
+                    ViewBag.drAddress = new SelectList(lstAddress, "Value", "Text", int.Parse(idaddress));
+
+                }
+                else
+                ViewBag.drAddress = new SelectList(lstAddress, "Value", "Text", 0);
                 return View(tblproduct);
             }
             else
@@ -853,7 +874,6 @@ namespace TOTO.Controllers.Admin.Product
 
             }
         }
-
         [HttpPost]
         [ValidateInput(false)]
         public ActionResult Edit(tblProduct tblproduct, FormCollection collection, int? id, List<HttpPostedFileBase> uploadFile, List<HttpPostedFileBase> uploadFiles)
@@ -888,6 +908,15 @@ namespace TOTO.Controllers.Admin.Product
                     string imagethum = listarray[listarray.Length - 1];
                     tblproduct.ImageLinkThumb = "/Images/_thumbs/Images/" + imagethum;
                     string ImageSale = collection["ImageSale"];
+                    string idAddress = collection["drAddress"];
+                    if (idAddress != null && idAddress != "")
+                    {
+                        tblproduct.Address = int.Parse(idAddress);
+                    }
+                    else
+                    {
+                        tblproduct.Address = 0;
+                    }
                     if (collection["Price"] != null)
                     {
                         float Price = float.Parse(collection["Price"]);
@@ -1228,7 +1257,6 @@ namespace TOTO.Controllers.Admin.Product
             }
 
         }
-
         public ActionResult ProductCheck(int? page, string id, FormCollection collection)
         {
 
@@ -1413,7 +1441,6 @@ namespace TOTO.Controllers.Admin.Product
 
             }
         }
-
         [HttpPost]
         [ValidateInput(false)]
         public ActionResult EditProductCheck(tblProduct tblproduct, FormCollection Collection, string id, List<HttpPostedFileBase> uploadFile)
