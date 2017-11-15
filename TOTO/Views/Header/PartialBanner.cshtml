@@ -21,30 +21,11 @@
              
                @{Html.RenderAction("PartialSearch", "Header");}
             
-            <div id="Box_Hotline">
-
-                @if (int.Parse(DateTime.Now.Hour.ToString()) > 0 && int.Parse(DateTime.Now.Hour.ToString()) < 7)
-                {
-
-                    <span>@Model.HotlineOUT (*)</span>
-
-                }
-                else if (int.Parse(DateTime.Now.Hour.ToString()) >= 7 && int.Parse(DateTime.Now.Hour.ToString()) < 19)
-                {
-
-                    <span>@Model.HotlineIN (*)</span>
-                }
-
-
-                else if (int.Parse(DateTime.Now.Hour.ToString()) >= 19 && int.Parse(DateTime.Now.Hour.ToString()) < 25)
-                {
-                    <span>@Model.HotlineOUT (*)</span>
-
-                }
-
-
-
-                
+            <div class="Box_Hotline">
+                    <span>@Model.HotlineIN (*)</span>  
+            </div>
+            <div class="Box_Hotline">
+                <span>@Model.HotlineOUT (*)</span>
             </div>
             <div id="Box_Order">
 

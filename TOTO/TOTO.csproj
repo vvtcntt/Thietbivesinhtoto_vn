@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -7,13 +9,13 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DC2A672A-0754-4DD8-A9A8-9009E5FEEF50}</ProjectGuid>
+    <ProjectGuid>{0B6AB4BB-5BC5-4A25-A5FD-66EA2D17FE19}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TOTO</RootNamespace>
     <AssemblyName>TOTO</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -21,6 +23,8 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -41,47 +45,96 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CKEditor.NET, Version=3.6.6.2, Culture=neutral, PublicKeyToken=e379cdf2f8354999, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Bonnuocsonha.com\Bonnuocsonha\Bonnuocsonha\Content\ckfinder\bin\Debug\CKEditor.NET.dll</HintPath>
+    <Reference Include="CKEditor.NET">
+      <HintPath>..\..\..\Lowen.vn\LOWEN\Content\ckfinder\bin\Debug\CKEditor.NET.dll</HintPath>
     </Reference>
-    <Reference Include="CKFinder, Version=2.5.0.2791, Culture=neutral, PublicKeyToken=579e7adc719a1423, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Bonnuocsonha.com\Bonnuocsonha\Bonnuocsonha\Content\ckfinder\bin\Debug\CKFinder.dll</HintPath>
+    <Reference Include="CKFinder">
+      <HintPath>..\..\..\Lowen.vn\LOWEN\Content\ckfinder\bin\Debug\CKFinder.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="HtmlAgilityPack">
-      <HintPath>..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    <Reference Include="HtmlAgilityPack, Version=1.6.2.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.6.2\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Microsoft.Owin, Version=2.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.2.0.2\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="PagedList">
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
       <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="PagedList.Mvc">
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
       <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
-    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -97,30 +150,30 @@
     </Reference>
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Optimization">
-      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
@@ -133,52 +186,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.AspNet.Identity.Core">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AspNet.Identity.Owin">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.1.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.1.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="Owin">
-      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin">
-      <HintPath>..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Host.SystemWeb">
-      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security">
-      <HintPath>..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.Facebook">
-      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.Cookies">
-      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.OAuth">
-      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.Google">
-      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.Twitter">
-      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
-      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Admin\Address\addressController.cs" />
     <Compile Include="Controllers\Admin\AdminController.cs" />
     <Compile Include="Controllers\Admin\Banks\BanksController.cs" />
@@ -203,6 +218,7 @@
     <Compile Include="Controllers\Admin\Product\ProductSaleadController.cs" />
     <Compile Include="Controllers\Admin\Product\ProductSYNadController.cs" />
     <Compile Include="Controllers\Admin\Role\ModuleController.cs" />
+    <Compile Include="Controllers\Admin\support\supportController.cs" />
     <Compile Include="Controllers\Admin\Url\UrladController.cs" />
     <Compile Include="Controllers\Admin\User\UsersController.cs" />
     <Compile Include="Controllers\Admin\WebSites\WebController.cs" />
@@ -218,12 +234,10 @@
     <Compile Include="Controllers\Display\Session\ProductSyn\ProductSynDisplayController.cs" />
     <Compile Include="Controllers\Display\Session\Product\OrderController.cs" />
     <Compile Include="Controllers\Display\Session\Product\ProductController.cs" />
-    <Compile Include="Controllers\ErrorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CheckLogin.cs" />
     <Compile Include="Models\ClsCheckRole.cs" />
     <Compile Include="Models\clsGiohang.cs" />
@@ -231,10 +245,7 @@
     <Compile Include="Models\clsSitemap.cs" />
     <Compile Include="Models\EncryptandDecrypt.cs" />
     <Compile Include="Models\HistoryView.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\ImageProduct.cs" />
     <Compile Include="Models\Mapping\HistoryViewMap.cs" />
-    <Compile Include="Models\Mapping\ImageProductMap.cs" />
     <Compile Include="Models\Mapping\ProductConnectMap.cs" />
     <Compile Include="Models\Mapping\tblAddressMap.cs" />
     <Compile Include="Models\Mapping\tblAgencyMap.cs" />
@@ -349,7 +360,6 @@
     <Compile Include="Models\TOTOContext.cs" />
     <Compile Include="Models\Updatehistoty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Admin\Fonts\fontawesome-webfont.svg" />
@@ -770,11 +780,6 @@
     <Content Include="Content\ckeditor\skins\moono\images\refresh.png" />
     <Content Include="Content\ckeditor\skins\moono\images\spinner.gif" />
     <Content Include="Content\ckeditor\styles.js" />
-    <Content Include="Content\ckfinder\bin\Debug\CKEditor.NET.dll" />
-    <Content Include="Content\ckfinder\bin\Debug\CKEditor.NET.pdb" />
-    <Content Include="Content\ckfinder\bin\Debug\CKFinder.dll" />
-    <Content Include="Content\ckfinder\bin\Debug\CKFinder.pdb" />
-    <Content Include="Content\ckfinder\bin\Release\CKFinder.dll" />
     <Content Include="Content\ckfinder\changelog.txt" />
     <Content Include="Content\ckfinder\ckfinder.html" />
     <Content Include="Content\ckfinder\ckfinder.js" />
@@ -1142,10 +1147,6 @@
     <Content Include="Content\ckfinder\plugins\dummy\lang\en.js" />
     <Content Include="Content\ckfinder\plugins\dummy\lang\pl.js" />
     <Content Include="Content\ckfinder\plugins\dummy\plugin.js" />
-    <Content Include="Content\ckfinder\plugins\fileeditor\bin\Debug\CKFinder_FileEditor.dll" />
-    <Content Include="Content\ckfinder\plugins\fileeditor\bin\Debug\CKFinder_FileEditor.pdb" />
-    <Content Include="Content\ckfinder\plugins\fileeditor\bin\Release\CKFinder_FileEditor.dll" />
-    <Content Include="Content\ckfinder\plugins\fileeditor\bin\Release\CKFinder_FileEditor.pdb" />
     <Content Include="Content\ckfinder\plugins\fileeditor\codemirror\addon\mode\overlay.js" />
     <Content Include="Content\ckfinder\plugins\fileeditor\codemirror\lib\codemirror.css" />
     <Content Include="Content\ckfinder\plugins\fileeditor\codemirror\lib\codemirror.js" />
@@ -1182,16 +1183,8 @@
     <Content Include="Content\ckfinder\plugins\gallery\colorbox\jquery.colorbox-min.js" />
     <Content Include="Content\ckfinder\plugins\gallery\colorbox\jquery.min.js" />
     <Content Include="Content\ckfinder\plugins\gallery\colorbox\license.txt" />
-    <Content Include="Content\ckfinder\plugins\imageresize\bin\Debug\CKFinder_ImageResize.dll" />
-    <Content Include="Content\ckfinder\plugins\imageresize\bin\Debug\CKFinder_ImageResize.pdb" />
-    <Content Include="Content\ckfinder\plugins\imageresize\bin\Release\CKFinder_ImageResize.dll" />
-    <Content Include="Content\ckfinder\plugins\imageresize\bin\Release\CKFinder_ImageResize.pdb" />
     <Content Include="Content\ckfinder\plugins\imageresize\images\mini.gif" />
     <Content Include="Content\ckfinder\plugins\imageresize\plugin.js" />
-    <Content Include="Content\ckfinder\plugins\watermark\bin\Debug\CKFinder_Watermark.dll" />
-    <Content Include="Content\ckfinder\plugins\watermark\bin\Debug\CKFinder_Watermark.pdb" />
-    <Content Include="Content\ckfinder\plugins\watermark\bin\Release\CKFinder_Watermark.dll" />
-    <Content Include="Content\ckfinder\plugins\watermark\bin\Release\CKFinder_Watermark.pdb" />
     <Content Include="Content\ckfinder\plugins\watermark\logo.gif" />
     <Content Include="Content\ckfinder\skins\kama\app.css" />
     <Content Include="Content\ckfinder\skins\kama\host.css" />
@@ -1414,6 +1407,7 @@
     <Content Include="Content\Display\iCon\Hethang.png" />
     <Content Include="Content\Display\iCon\history_1.jpg" />
     <Content Include="Content\Display\iCon\home_w.png" />
+    <Content Include="Content\Display\iCon\hotline-icons.png" />
     <Content Include="Content\Display\iCon\hotline.png" />
     <Content Include="Content\Display\iCon\ho_tro_vien.png" />
     <Content Include="Content\Display\iCon\icon-calcua.png" />
@@ -1445,6 +1439,7 @@
     <Content Include="Content\Display\iCon\logo-while.png" />
     <Content Include="Content\Display\iCon\logo-wihile.png" />
     <Content Include="Content\Display\iCon\logo.png" />
+    <Content Include="Content\Display\iCon\logo_zalo.png" />
     <Content Include="Content\Display\iCon\Maps.png" />
     <Content Include="Content\Display\iCon\muadongbo.png" />
     <Content Include="Content\Display\iCon\neorest_1.jpg" />
@@ -1510,6 +1505,7 @@
     <Content Include="Content\Display\iCon\tornado.png" />
     <Content Include="Content\Display\iCon\totochinhhang.png" />
     <Content Include="Content\Display\iCon\TOTOERRO.png" />
+    <Content Include="Content\Display\iCon\Viber_logo.png" />
     <Content Include="Content\Display\iCon\view_refresh.png" />
     <Content Include="Content\Display\iCon\vn.png" />
     <Content Include="Content\Display\iCon\Watesaving.png" />
@@ -1537,9 +1533,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\ai.0.22.9-build00167.js" />
+    <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\AutoComplete.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Admin\Fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Admin\Fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Admin\Fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Admin\Fonts\FontAwesome.otf" />
+    <Content Include="Content\Admin\Fonts\UTM-Swiss-Condensed.ttf" />
+    <Content Include="Content\Admin\Fonts\UTM-Swiss-CondensedBold.ttf" />
     <Content Include="Content\ckeditor\CHANGES.md" />
     <Content Include="Content\ckeditor\LICENSE.md" />
     <Content Include="Content\ckeditor\plugins\scayt\LICENSE.md" />
@@ -1558,12 +1565,6 @@
     <Content Include="Content\ckeditor\skins\moono\readme.md" />
     <Content Include="Content\ckfinder\plugins\fileeditor\codemirror\LICENSE" />
     <Content Include="Content\ckfinder\userfiles\.htaccess" />
-    <Content Include="Content\Admin\Fonts\fontawesome-webfont.eot" />
-    <Content Include="Content\Admin\Fonts\fontawesome-webfont.ttf" />
-    <Content Include="Content\Admin\Fonts\fontawesome-webfont.woff" />
-    <Content Include="Content\Admin\Fonts\FontAwesome.otf" />
-    <Content Include="Content\Admin\Fonts\UTM-Swiss-Condensed.ttf" />
-    <Content Include="Content\Admin\Fonts\UTM-Swiss-CondensedBold.ttf" />
     <Content Include="Content\Display\Font\almonte.ttf" />
     <Content Include="Content\Display\Font\Roboto-Bold.ttf" />
     <Content Include="Content\Display\Font\Roboto-Regular.ttf" />
@@ -1588,7 +1589,6 @@
     <Content Include="Content\Display\iCon\prettyPhoto\dark_square\Thumbs.db" />
     <Content Include="Content\Display\iCon\prettyPhoto\facebook\Thumbs.db" />
     <Content Include="Content\Display\iCon\toilet.ms864t2.pdf" />
-    <Content Include="Content\Display\toto.psd" />
     <None Include="Properties\PublishProfiles\Thietbivesinhtoto.vn.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\disable-copyright.js" />
@@ -1597,6 +1597,8 @@
     <Content Include="Scripts\jquery-2.1.4.min.map" />
     <Content Include="Scripts\jquery-3.1.0.min.map" />
     <Content Include="Scripts\jquery-3.1.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.2.1.min.map" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
@@ -1609,6 +1611,11 @@
     <Content Include="Scripts\jquery-3.1.0.min.js" />
     <Content Include="Scripts\jquery-3.1.0.slim.js" />
     <Content Include="Scripts\jquery-3.1.0.slim.min.js" />
+    <None Include="Scripts\jquery-3.2.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.2.1.js" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
@@ -1630,11 +1637,20 @@
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\linhnguyen.css" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\plusone.js" />
     <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="sitemap.xml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1642,37 +1658,50 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\_RemoveAccountPartial.cshtml" />
-    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
     <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveAccountPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\address\Create.cshtml" />
+    <Content Include="Views\address\Edit.cshtml" />
+    <Content Include="Views\address\Index.cshtml" />
+    <Content Include="Views\address\ProductAddress.cshtml" />
+    <Content Include="Views\address\UpdateProductAddress.cshtml" />
     <Content Include="Views\Admin\partialBanner.cshtml" />
+    <Content Include="Views\Agency\AgencyPartial.cshtml" />
+    <Content Include="Views\Agency\Create.cshtml" />
+    <Content Include="Views\Agency\Edit.cshtml" />
+    <Content Include="Views\Agency\Index.cshtml" />
     <Content Include="Views\Banks\Create.cshtml" />
     <Content Include="Views\Banks\Edit.cshtml" />
     <Content Include="Views\Banks\Index.cshtml" />
+    <Content Include="Views\Baogia\BaogiaDetail.cshtml" />
+    <Content Include="Views\Catalogues\CataloguesDetail.cshtml" />
+    <Content Include="Views\Catalogues\ListCatalogues.cshtml" />
     <Content Include="Views\ColorProduct\Create.cshtml" />
     <Content Include="Views\ColorProduct\Edit.cshtml" />
     <Content Include="Views\ColorProduct\Index.cshtml" />
+    <Content Include="Views\Competitor\Create.cshtml" />
+    <Content Include="Views\Competitor\Edit.cshtml" />
+    <Content Include="Views\Competitor\Index.cshtml" />
     <Content Include="Views\Config\Index.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Criteria\Create.cshtml" />
     <Content Include="Views\Criteria\Edit.cshtml" />
     <Content Include="Views\Criteria\Index.cshtml" />
     <Content Include="Views\Criteria\partialCriteria.cshtml" />
+    <Content Include="Views\Default\AdwLeftExt.cshtml" />
+    <Content Include="Views\Default\AdwLeftRight.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Default\Popup.cshtml" />
     <Content Include="Views\Errors\NotFound.cshtml" />
+    <Content Include="Views\Footter\ControlFootter.cshtml" />
+    <Content Include="Views\Footter\MenuMobine.cshtml" />
     <Content Include="Views\FunctionProduct\Create.cshtml" />
     <Content Include="Views\FunctionProduct\Edit.cshtml" />
     <Content Include="Views\FunctionProduct\Index.cshtml" />
@@ -1683,10 +1712,19 @@
     <Content Include="Views\GroupNews\Edit.cshtml" />
     <Content Include="Views\GroupNews\Index.cshtml" />
     <Content Include="Views\GroupNews\PartialGroupNews.cshtml" />
+    <Content Include="Views\GroupPrice\Create.cshtml" />
+    <Content Include="Views\GroupPrice\Edit.cshtml" />
+    <Content Include="Views\GroupPrice\Index.cshtml" />
     <Content Include="Views\GroupProduct\Create.cshtml" />
     <Content Include="Views\GroupProduct\Edit.cshtml" />
     <Content Include="Views\GroupProduct\Index.cshtml" />
     <Content Include="Views\GroupProduct\PartialGroupProduct.cshtml" />
+    <Content Include="Views\Header\ControlHeader.cshtml" />
+    <Content Include="Views\Header\ParitalMenuWidth.cshtml" />
+    <Content Include="Views\Header\PartialBanner.cshtml" />
+    <Content Include="Views\Header\PartialSearch.cshtml" />
+    <Content Include="Views\Header\Partialsidebar.cshtml" />
+    <Content Include="Views\Header\PatialHeader.cshtml" />
     <Content Include="Views\Historys\Index.cshtml" />
     <Content Include="Views\Hotline\Create.cshtml" />
     <Content Include="Views\Hotline\Edit.cshtml" />
@@ -1699,12 +1737,19 @@
     <Content Include="Views\InfoCriteria\Edit.cshtml" />
     <Content Include="Views\InfoCriteria\Index.cshtml" />
     <Content Include="Views\InfoCriteria\partialCriteria.cshtml" />
+    <Content Include="Views\ListCompetitor\comparePrice.cshtml" />
+    <Content Include="Views\ListCompetitor\Create.cshtml" />
+    <Content Include="Views\ListCompetitor\Displaycompetitor.cshtml" />
+    <Content Include="Views\ListCompetitor\Edit.cshtml" />
+    <Content Include="Views\ListCompetitor\Index.cshtml" />
     <Content Include="Views\Login\LoginIndex.cshtml" />
     <Content Include="Views\Manufacturesad\Create.cshtml" />
     <Content Include="Views\Manufacturesad\Edit.cshtml" />
     <Content Include="Views\Manufacturesad\Index.cshtml" />
     <Content Include="Views\Manufacturesad\partialManufactures.cshtml" />
     <Content Include="Views\Mapsad\Edit.cshtml" />
+    <Content Include="Views\Maps\Edit.cshtml" />
+    <Content Include="Views\Maps\Index.cshtml" />
     <Content Include="Views\Module\Create.cshtml" />
     <Content Include="Views\Module\Edit.cshtml" />
     <Content Include="Views\Module\Index.cshtml" />
@@ -1712,9 +1757,18 @@
     <Content Include="Views\Newsad\Edit.cshtml" />
     <Content Include="Views\Newsad\Index.cshtml" />
     <Content Include="Views\Newsad\PartialNews.cshtml" />
+    <Content Include="Views\News\ListNews.cshtml" />
+    <Content Include="Views\News\NewsDetail.cshtml" />
+    <Content Include="Views\News\PartialRightNews.cshtml" />
     <Content Include="Views\Orderad\ActiveOrder.cshtml" />
     <Content Include="Views\Orderad\Detail.cshtml" />
     <Content Include="Views\Orderad\Index.cshtml" />
+    <Content Include="Views\Order\InputOrder.cshtml" />
+    <Content Include="Views\Order\OrderIndex.cshtml" />
+    <Content Include="Views\Order\OrderPartial.cshtml" />
+    <Content Include="Views\Partnerad\Create.cshtml" />
+    <Content Include="Views\Partnerad\Edit.cshtml" />
+    <Content Include="Views\Partnerad\Index.cshtml" />
     <Content Include="Views\Productad\Create.cshtml" />
     <Content Include="Views\Productad\Edit.cshtml" />
     <Content Include="Views\Productad\EditProductCheck.cshtml" />
@@ -1729,6 +1783,16 @@
     <Content Include="Views\ProductSYNad\Create.cshtml" />
     <Content Include="Views\ProductSYNad\Edit.cshtml" />
     <Content Include="Views\ProductSYNad\Index.cshtml" />
+    <Content Include="Views\ProductSynDisplay\Hienthidongbo.cshtml" />
+    <Content Include="Views\ProductSynDisplay\ListProductSyn.cshtml" />
+    <Content Include="Views\ProductSynDisplay\ProductSyn_Detail.cshtml" />
+    <Content Include="Views\ProductSynDisplay\RightProductSyn.cshtml" />
+    <Content Include="Views\Product\ListProduct.cshtml" />
+    <Content Include="Views\Product\PartialProductHomes.cshtml" />
+    <Content Include="Views\Product\PartialProductSaleHomes.cshtml" />
+    <Content Include="Views\Product\PartialRightProductDetail.cshtml" />
+    <Content Include="Views\Product\ProductDetail.cshtml" />
+    <Content Include="Views\Product\SearchProduct.cshtml" />
     <Content Include="Views\SendEmail\Create.cshtml" />
     <Content Include="Views\SendEmail\Delete.cshtml" />
     <Content Include="Views\SendEmail\Details.cshtml" />
@@ -1750,69 +1814,24 @@
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\Shared\_LayoutCompetitor.cshtml" />
     <Content Include="Views\Shared\_LayoutDefault.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
     <Content Include="Views\Shared\_LayoutProductSale.cshtml" />
     <Content Include="Views\Shared\_LayoutSale.cshtml" />
-    <Content Include="Views\Agency\AgencyPartial.cshtml" />
-    <Content Include="Views\Agency\Create.cshtml" />
-    <Content Include="Views\Agency\Edit.cshtml" />
-    <Content Include="Views\Agency\Index.cshtml" />
-    <Content Include="Views\Baogia\BaogiaDetail.cshtml" />
-    <Content Include="Views\Catalogues\CataloguesDetail.cshtml" />
-    <Content Include="Views\Catalogues\ListCatalogues.cshtml" />
-    <Content Include="Views\Competitor\Create.cshtml" />
-    <Content Include="Views\Competitor\Edit.cshtml" />
-    <Content Include="Views\Competitor\Index.cshtml" />
-    <Content Include="Views\Contact\Index.cshtml" />
-    <Content Include="Views\Default\AdwLeftExt.cshtml" />
-    <Content Include="Views\Default\AdwLeftRight.cshtml" />
-    <Content Include="Views\Default\Index.cshtml" />
-    <Content Include="Views\Default\Popup.cshtml" />
-    <Content Include="Views\Footter\ControlFootter.cshtml" />
-    <Content Include="Views\Footter\MenuMobine.cshtml" />
-    <Content Include="Views\Header\ControlHeader.cshtml" />
-    <Content Include="Views\Header\ParitalMenuWidth.cshtml" />
-    <Content Include="Views\Header\PartialBanner.cshtml" />
-    <Content Include="Views\Header\PartialSearch.cshtml" />
-    <Content Include="Views\Header\Partialsidebar.cshtml" />
-    <Content Include="Views\Header\PatialHeader.cshtml" />
-    <Content Include="Views\ListCompetitor\comparePrice.cshtml" />
-    <Content Include="Views\ListCompetitor\Create.cshtml" />
-    <Content Include="Views\ListCompetitor\Displaycompetitor.cshtml" />
-    <Content Include="Views\ListCompetitor\Edit.cshtml" />
-    <Content Include="Views\ListCompetitor\Index.cshtml" />
-    <Content Include="Views\Maps\Edit.cshtml" />
-    <Content Include="Views\Maps\Index.cshtml" />
-    <Content Include="Views\News\ListNews.cshtml" />
-    <Content Include="Views\News\NewsDetail.cshtml" />
-    <Content Include="Views\News\PartialRightNews.cshtml" />
-    <Content Include="Views\Order\InputOrder.cshtml" />
-    <Content Include="Views\Order\OrderIndex.cshtml" />
-    <Content Include="Views\Order\OrderPartial.cshtml" />
-    <Content Include="Views\ProductSynDisplay\Hienthidongbo.cshtml" />
-    <Content Include="Views\ProductSynDisplay\ListProductSyn.cshtml" />
-    <Content Include="Views\ProductSynDisplay\ProductSyn_Detail.cshtml" />
-    <Content Include="Views\ProductSynDisplay\RightProductSyn.cshtml" />
-    <Content Include="Views\Product\ListProduct.cshtml" />
-    <Content Include="Views\Product\PartialProductHomes.cshtml" />
-    <Content Include="Views\Product\PartialProductSaleHomes.cshtml" />
-    <Content Include="Views\Product\PartialRightProductDetail.cshtml" />
-    <Content Include="Views\Product\ProductDetail.cshtml" />
-    <Content Include="Views\Product\SearchProduct.cshtml" />
-    <Content Include="Views\GroupPrice\Index.cshtml" />
-    <Content Include="Views\GroupPrice\Create.cshtml" />
-    <Content Include="Views\GroupPrice\Edit.cshtml" />
-    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
-    <Content Include="Views\Partnerad\Create.cshtml" />
-    <Content Include="Views\Partnerad\Edit.cshtml" />
-    <Content Include="Views\Partnerad\Index.cshtml" />
-    <Content Include="Views\address\Index.cshtml" />
-    <Content Include="Views\address\Create.cshtml" />
-    <Content Include="Views\address\Edit.cshtml" />
-    <Content Include="Views\address\UpdateProductAddress.cshtml" />
-    <Content Include="Views\address\ProductAddress.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\support\Create.cshtml" />
+    <Content Include="Views\support\Edit.cshtml" />
+    <Content Include="Views\support\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\ckfinder\bin\Debug\" />
+    <Folder Include="Content\ckfinder\bin\Release\" />
+    <Folder Include="Content\ckfinder\plugins\fileeditor\bin\Debug\" />
+    <Folder Include="Content\ckfinder\plugins\fileeditor\bin\Release\" />
+    <Folder Include="Content\ckfinder\plugins\imageresize\bin\Debug\" />
+    <Folder Include="Content\ckfinder\plugins\imageresize\bin\Release\" />
+    <Folder Include="Content\ckfinder\plugins\watermark\bin\Debug\" />
+    <Folder Include="Content\ckfinder\plugins\watermark\bin\Release\" />
     <Folder Include="Views\Catagues\" />
   </ItemGroup>
   <ItemGroup>
@@ -1821,6 +1840,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -1838,9 +1858,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>3147</DevelopmentServerPort>
+          <DevelopmentServerPort>2808</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:57874/</IISUrl>
+          <IISUrl>http://localhost:2808/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -1850,6 +1870,13 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

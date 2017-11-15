@@ -323,7 +323,7 @@ namespace TOTO.Controllers.Admin.Product
                 return RedirectToAction("LoginIndex", "Login");
             }
 
-            if (Session["Thongbao"] != null || Session["Thongbao"] != "")
+            if (Session["Thongbao"] != null && Session["Thongbao"] != "")
             {
 
                 ViewBag.thongbao = Session["Thongbao"].ToString();
@@ -859,7 +859,7 @@ namespace TOTO.Controllers.Admin.Product
                 {
                     lstAddress.Add(new SelectListItem { Text = item.Name, Value = item.id.ToString() });
                 }
-                if(idaddress!=null || idaddress!="")
+                if(idaddress!=null && idaddress!="")
                 {
                     ViewBag.drAddress = new SelectList(lstAddress, "Value", "Text", int.Parse(idaddress));
 
