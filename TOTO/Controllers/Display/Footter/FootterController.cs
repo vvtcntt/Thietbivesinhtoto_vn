@@ -47,6 +47,24 @@ namespace TOTO.Controllers.Display.Footter
                 result.Append("<span class=\"Phone\"><span class=\"icon\"></span> "+listPartner[i].Name+": <span>"+ listPartner[i].Mobile+ " - "+listPartner[i].Hotline+"</span></span>");
             }
             ViewBag.result = result.ToString();
+            StringBuilder Chuoiimg = new StringBuilder();
+            if (Request.Browser.IsMobileDevice)
+            {
+                Chuoiimg.Append("<div id=\"adwfooter\"><div class=\"support\">");
+                Chuoiimg.Append("<div class=\"leftSupport\">");
+                Chuoiimg.Append("<p><i class=\"fa fa-comments-o\" aria-hidden=\"true\"></i> Gọi ngay !</p>");
+                Chuoiimg.Append("<a href=\"tel:" + tblconfig.HotlineIN + "\"> " + tblconfig.HotlineIN + "</a>");
+                Chuoiimg.Append("<a href=\"tel:" + tblconfig.HotlineOUT + "\">" + tblconfig.HotlineOUT + "</a>");
+                Chuoiimg.Append("</div>");
+                Chuoiimg.Append("<div class=\"rightSupport\">");
+                Chuoiimg.Append("<p><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> Thời gian làm việc</p>");
+                Chuoiimg.Append("<span class=\"sp1\"> 8H đến 19H30</span>");
+                Chuoiimg.Append("<span class=\"sp2\"> Làm cả thứ 7 & Chủ nhật</span>");
+                Chuoiimg.Append("</div>");
+                Chuoiimg.Append("</div></div>");
+
+            }
+            ViewBag.results = Chuoiimg.ToString();
             return PartialView(tblconfig);
         }
         public ActionResult Command(FormCollection collection, tblRegister registry)

@@ -22,10 +22,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:49:21</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>05/26/2018 15:58:56</publishTime>
+      <publishTime>08/02/2018 10:16:24</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>05/26/2018 15:58:56</publishTime>
+      <publishTime>08/02/2018 10:16:24</publishTime>
     </File>
     <File Include="bin/CKEditor.NET.dll">
       <publishTime>09/25/2017 16:00:02</publishTime>
@@ -160,10 +160,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/28/2015 18:04:30</publishTime>
     </File>
     <File Include="bin/TOTO.dll">
-      <publishTime>05/26/2018 15:58:34</publishTime>
+      <publishTime>08/02/2018 10:16:01</publishTime>
     </File>
     <File Include="bin/TOTO.pdb">
-      <publishTime>05/26/2018 15:58:34</publishTime>
+      <publishTime>08/02/2018 10:16:01</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>09/11/2013 07:28:38</publishTime>
@@ -3226,7 +3226,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:51:11</publishTime>
     </File>
     <File Include="Content/Display/Css/Index.css">
-      <publishTime>11/15/2017 10:31:55</publishTime>
+      <publishTime>08/02/2018 09:31:47</publishTime>
     </File>
     <File Include="Content/Display/Css/Index_Rs.css">
       <publishTime>10/27/2017 13:51:11</publishTime>
@@ -3835,7 +3835,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 14:13:25</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>05/26/2018 15:58:46</publishTime>
+      <publishTime>08/02/2018 10:16:12</publishTime>
     </File>
     <File Include="Scripts/ai.0.22.9-build00167.js">
       <publishTime>10/27/2017 13:49:22</publishTime>
@@ -4129,7 +4129,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:58:18</publishTime>
     </File>
     <File Include="Views/Footter/ControlFootter.cshtml">
-      <publishTime>11/08/2017 16:04:15</publishTime>
+      <publishTime>08/02/2018 10:15:31</publishTime>
     </File>
     <File Include="Views/Footter/MenuMobine.cshtml">
       <publishTime>10/27/2017 13:58:18</publishTime>
@@ -4300,7 +4300,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:58:21</publishTime>
     </File>
     <File Include="Views/News/NewsDetail.cshtml">
-      <publishTime>10/27/2017 13:58:21</publishTime>
+      <publishTime>06/20/2018 11:41:42</publishTime>
     </File>
     <File Include="Views/News/PartialRightNews.cshtml">
       <publishTime>10/27/2017 13:58:21</publishTime>
@@ -4357,7 +4357,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/26/2018 15:53:16</publishTime>
     </File>
     <File Include="Views/Product/ProductDetail.cshtml">
-      <publishTime>10/27/2017 13:58:21</publishTime>
+      <publishTime>06/20/2018 11:41:49</publishTime>
     </File>
     <File Include="Views/Product/SearchProduct.cshtml">
       <publishTime>10/27/2017 13:58:21</publishTime>

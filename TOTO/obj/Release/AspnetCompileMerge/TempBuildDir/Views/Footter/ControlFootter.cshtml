@@ -109,7 +109,7 @@
 <div class="Clear"></div>
 <div id="Authorship" style="width:100%; height:21px; float:left; margin:2px 0px; text-align:center">
     <nav>
-     @Html.Raw(Model.DMCA)
+        @Html.Raw(Model.DMCA)        
         <a href="https://plus.google.com/@Model.Authorship?rel=author" title="Google aduthorship"><img src="~/Content/Display/iCon/GoogleAuthorShip.png" alt="Đăng ký google authorShip" /></a>
     </nav>
     <div class="Clear"></div>
@@ -141,9 +141,10 @@
     <div id="LinkURL">
         @Html.Raw(ViewBag.chuoi)
     </div>
-    <div style="opacity:0.01"> <a href="http://binhnonglanh.top" title="Bình nóng lạnh" style="color:#13439c; font-size:5px">www.Binhnonglanh.top</a>,<a href="http://Thayloilocnuoc.com" title="Thay lõi lọc nước tại nhà" style="color:#13439c; font-size:5px">Thay lõi lọc nước tại nhà</a></div>
-    <div class="Clear"></div>
+   <div class="Clear"></div>
 </div>
+@Html.Raw(ViewBag.results)
+
 @if(Request.Browser.IsMobileDevice==false)
   {@Html.Raw(Model.CodeChat)
 
