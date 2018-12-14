@@ -22,10 +22,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:49:21</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>08/02/2018 10:16:24</publishTime>
+      <publishTime>12/14/2018 11:31:39</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>08/02/2018 10:16:24</publishTime>
+      <publishTime>12/14/2018 11:31:38</publishTime>
     </File>
     <File Include="bin/CKEditor.NET.dll">
       <publishTime>09/25/2017 16:00:02</publishTime>
@@ -160,10 +160,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/28/2015 18:04:30</publishTime>
     </File>
     <File Include="bin/TOTO.dll">
-      <publishTime>08/02/2018 10:16:01</publishTime>
+      <publishTime>12/14/2018 11:31:10</publishTime>
     </File>
     <File Include="bin/TOTO.pdb">
-      <publishTime>08/02/2018 10:16:01</publishTime>
+      <publishTime>12/14/2018 11:31:10</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>09/11/2013 07:28:38</publishTime>
@@ -3226,7 +3226,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:51:11</publishTime>
     </File>
     <File Include="Content/Display/Css/Index.css">
-      <publishTime>08/02/2018 09:31:47</publishTime>
+      <publishTime>09/19/2018 16:43:35</publishTime>
     </File>
     <File Include="Content/Display/Css/Index_Rs.css">
       <publishTime>10/27/2017 13:51:11</publishTime>
@@ -3245,6 +3245,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/Display/Css/News_Rs.css">
       <publishTime>10/27/2017 13:51:11</publishTime>
+    </File>
+    <File Include="Content/Display/Css/nivo-slider.css">
+      <publishTime>06/15/2018 23:39:43</publishTime>
     </File>
     <File Include="Content/Display/Css/Order.css">
       <publishTime>10/27/2017 13:51:11</publishTime>
@@ -3342,6 +3345,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/Display/iCon/AMjanln.png">
       <publishTime>10/27/2017 13:51:11</publishTime>
     </File>
+    <File Include="Content/Display/iCon/arrows.png">
+      <publishTime>06/15/2018 23:39:43</publishTime>
+    </File>
     <File Include="Content/Display/iCon/Bancau.png">
       <publishTime>10/27/2017 13:51:11</publishTime>
     </File>
@@ -3353,6 +3359,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/Display/iCon/bg_bannner.png">
       <publishTime>10/27/2017 13:51:11</publishTime>
+    </File>
+    <File Include="Content/Display/iCon/bg_m.png">
+      <publishTime>06/15/2018 23:39:43</publishTime>
     </File>
     <File Include="Content/Display/iCon/bg_nvar-sale.png">
       <publishTime>10/27/2017 13:51:11</publishTime>
@@ -3754,7 +3763,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:51:13</publishTime>
     </File>
     <File Include="Content/Display/Index.html">
-      <publishTime>12/26/2017 16:12:49</publishTime>
+      <publishTime>12/14/2018 10:29:28</publishTime>
     </File>
     <File Include="Content/Display/Js/Adw.js">
       <publishTime>10/27/2017 13:51:13</publishTime>
@@ -3767,6 +3776,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/Display/Js/jquery.mmenu.min.all.js">
       <publishTime>10/27/2017 13:51:13</publishTime>
+    </File>
+    <File Include="Content/Display/Js/jquery.nivo.slider.js">
+      <publishTime>06/15/2018 23:39:43</publishTime>
     </File>
     <File Include="Content/Display/Js/jquery.popup.js">
       <publishTime>10/27/2017 13:51:13</publishTime>
@@ -3835,7 +3847,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 14:13:25</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>08/02/2018 10:16:12</publishTime>
+      <publishTime>12/14/2018 11:31:17</publishTime>
     </File>
     <File Include="Scripts/ai.0.22.9-build00167.js">
       <publishTime>10/27/2017 13:49:22</publishTime>
@@ -4129,7 +4141,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:58:18</publishTime>
     </File>
     <File Include="Views/Footter/ControlFootter.cshtml">
-      <publishTime>08/02/2018 10:15:31</publishTime>
+      <publishTime>09/21/2018 16:29:55</publishTime>
     </File>
     <File Include="Views/Footter/MenuMobine.cshtml">
       <publishTime>10/27/2017 13:58:18</publishTime>
@@ -4201,7 +4213,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:58:18</publishTime>
     </File>
     <File Include="Views/Header/PatialHeader.cshtml">
-      <publishTime>10/27/2017 13:58:18</publishTime>
+      <publishTime>12/14/2018 10:38:56</publishTime>
     </File>
     <File Include="Views/Historys/Index.cshtml">
       <publishTime>10/27/2017 13:58:18</publishTime>
@@ -4300,7 +4312,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:58:21</publishTime>
     </File>
     <File Include="Views/News/NewsDetail.cshtml">
-      <publishTime>06/20/2018 11:41:42</publishTime>
+      <publishTime>08/29/2018 09:11:24</publishTime>
     </File>
     <File Include="Views/News/PartialRightNews.cshtml">
       <publishTime>10/27/2017 13:58:21</publishTime>
@@ -4317,14 +4329,20 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Newsad/PartialNews.cshtml">
       <publishTime>10/27/2017 13:58:21</publishTime>
     </File>
+    <File Include="Views/Order/Error.cshtml">
+      <publishTime>09/19/2018 16:45:07</publishTime>
+    </File>
     <File Include="Views/Order/InputOrder.cshtml">
       <publishTime>10/27/2017 13:58:21</publishTime>
     </File>
     <File Include="Views/Order/OrderIndex.cshtml">
-      <publishTime>10/27/2017 13:58:21</publishTime>
+      <publishTime>10/03/2018 16:22:00</publishTime>
     </File>
     <File Include="Views/Order/OrderPartial.cshtml">
       <publishTime>10/27/2017 13:58:21</publishTime>
+    </File>
+    <File Include="Views/Order/Success.cshtml">
+      <publishTime>09/19/2018 16:26:38</publishTime>
     </File>
     <File Include="Views/Orderad/ActiveOrder.cshtml">
       <publishTime>10/27/2017 13:58:21</publishTime>
@@ -4357,7 +4375,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/26/2018 15:53:16</publishTime>
     </File>
     <File Include="Views/Product/ProductDetail.cshtml">
-      <publishTime>06/20/2018 11:41:49</publishTime>
+      <publishTime>10/02/2018 13:45:42</publishTime>
     </File>
     <File Include="Views/Product/SearchProduct.cshtml">
       <publishTime>10/27/2017 13:58:21</publishTime>
@@ -4447,7 +4465,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 14:15:57</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutDefault.cshtml">
-      <publishTime>10/27/2017 14:15:57</publishTime>
+      <publishTime>12/14/2018 11:30:35</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutLogin.cshtml">
       <publishTime>10/27/2017 14:15:57</publishTime>
@@ -4513,7 +4531,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:48:53</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/26/2018 15:58:38</publishTime>
+      <publishTime>12/10/2018 17:33:23</publishTime>
     </File>
   </ItemGroup>
 </Project>

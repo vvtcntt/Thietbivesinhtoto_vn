@@ -147,7 +147,8 @@ D:\Githubs\Thietbivesinhtoto.vn\TOTO\bin\System.Web.WebPages.Deployment.xml
 D:\Githubs\Thietbivesinhtoto.vn\TOTO\bin\System.Web.WebPages.Razor.xml
 D:\Githubs\Thietbivesinhtoto.vn\TOTO\bin\Antlr3.Runtime.pdb
 D:\Githubs\Thietbivesinhtoto.vn\TOTO\bin\Newtonsoft.Json.xml
-D:\Githubs\Thietbivesinhtoto.vn\TOTO\obj\Debug\TOTO.csprojResolveAssemblyReference.cache
 D:\Githubs\Thietbivesinhtoto.vn\TOTO\obj\Debug\TOTO.csproj.CoreCompileInputs.cache
 D:\Githubs\Thietbivesinhtoto.vn\TOTO\obj\Debug\TOTO.dll
 D:\Githubs\Thietbivesinhtoto.vn\TOTO\obj\Debug\TOTO.pdb
+D:\Githubs\Thietbivesinhtoto.vn\TOTO\obj\Debug\TOTO.csprojAssemblyReference.cache
+D:\Githubs\Thietbivesinhtoto.vn\TOTO\obj\Debug\TOTO.csproj.CopyComplete

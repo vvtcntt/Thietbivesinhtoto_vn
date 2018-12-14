@@ -108,15 +108,7 @@ namespace TOTO.Controllers.Display.Header
             string chuoislide = "";
             for (int i = 0; i < listimageslide.Count; i++)
             {
-                if (i == 0)
-                {
-                    chuoislide += "url(" + listimageslide[i].Images + ") " + (770 * i) + "px 0 no-repeat";
-                }
-                else
-                {
-
-                    chuoislide += ", url(" + listimageslide[i].Images + ") " + (770 * i) + "px 0 no-repeat";
-                }
+                chuoislide +="<a href=\""+listimageslide[i].Url+ "\" title=\"" + listimageslide[i].Name + "\"> <img src=\"" + listimageslide[i].Images + "\" data-thumb=\"" + listimageslide[i].Images + "\" alt=\"" + listimageslide[i].Name + "\" /></a>";
             }
             ViewBag.chuoislide = chuoislide;
             var listnew = db.tblNews.Where(p => p.Active == true && p.ViewHomes == true).OrderByDescending(p => p.DateCreate).Take(2).ToList();

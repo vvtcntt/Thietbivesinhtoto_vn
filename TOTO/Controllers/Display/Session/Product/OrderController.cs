@@ -177,12 +177,12 @@ namespace CMSCODE.Controllers.Display.Product
 
 
                     Session["Status"] = "<script>$(document).ready(function(){ alert('Bạn đã đặt hàng thành công !') });</script>";
-                    return RedirectToAction("OrderIndex");
+                    return RedirectToAction("Success");
                 }
                 catch (Exception ex)
                 {
                     Session["Status"] = "<script>$(document).ready(function(){ alert('Bạn đã đặt hàng không thành công " + ex.Message + "!') });</script>";
-                    return RedirectToAction("OrderIndex");
+                    return RedirectToAction("Error");
                 }
 
             }
@@ -518,6 +518,14 @@ namespace CMSCODE.Controllers.Display.Product
         public PartialViewResult InputOrder()
         {
             return PartialView();
+        }
+        public ActionResult Success()
+        {
+            return View();
+        }
+        public ActionResult Error()
+        {
+            return View();
         }
     }
 }

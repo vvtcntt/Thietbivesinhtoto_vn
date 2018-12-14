@@ -432,16 +432,26 @@ namespace TOTO.Controllers.Display.Session.Product
             //lIST Menu
             int idCate = int.Parse(Product.idCate.ToString());
             tblGroupProduct grouproduct = db.tblGroupProducts.Find(idCate);
-            int idParent = int.Parse(grouproduct.ParentID.ToString());
-             string chuoimenu = "";
-            var listGroupProduct = db.tblGroupProducts.Where(p => p.ParentID==idParent && p.Active == true).OrderBy(p => p.Ord).ToList();
-            for (int i = 0; i < listGroupProduct.Count; i++)
+            string idpa = grouproduct.ParentID.ToString();
+            int idParent = 0;
+             if (idpa!=null && idpa!="")
             {
+                idParent = int.Parse(idpa);
+                var listGroupProduct = db.tblGroupProducts.Where(p => p.ParentID == idParent && p.Active == true).OrderBy(p => p.Ord).ToList();
+                string chuoimenu = "";
 
-                chuoimenu += "<h2><a href=\"/" + listGroupProduct[i].Tag + ".html\" title=\"\">› " + listGroupProduct[i].Name + "</a><h2>";
+                for (int i = 0; i < listGroupProduct.Count; i++)
+                {
+
+                    chuoimenu += "<h2><a href=\"/" + listGroupProduct[i].Tag + ".html\" title=\"\">› " + listGroupProduct[i].Name + "</a><h2>";
+
+                }
+                ViewBag.chuoimenu = chuoimenu;
 
             }
-            ViewBag.chuoimenu = chuoimenu;
+
+
+
             //Load sản phẩm liên quan
             string Url = grouproduct.Tag;
             StringBuilder chuoiproduct = new StringBuilder();
@@ -463,7 +473,7 @@ namespace TOTO.Controllers.Display.Session.Product
                 else
                     chuoiproduct.Append("<span class=\"PriceSale\">" + string.Format("{0:#,#}", listProduct[i].PriceSale) + "đ</span>");
                 if (listProduct[i].Price < 10)
-                chuoiproduct.Append("<span class=\"Price\">Liên hệ</span>");
+                    chuoiproduct.Append("<span class=\"Price\">Liên hệ</span>");
                 else
                     chuoiproduct.Append("<span class=\"Price\">" + string.Format("{0:#,#}", listProduct[i].Price) + "đ</span>");
                 chuoiproduct.Append(" </div>");

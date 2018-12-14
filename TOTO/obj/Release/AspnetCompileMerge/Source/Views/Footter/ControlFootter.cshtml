@@ -48,7 +48,7 @@
     <div class="Tear_Info-1">
         <span class="Name">Chỉ dẫn mua hàng</span>
         <div class="line_Bo"></div>
-        <span class="Location"><span class="icon"></span> Showroom TOTO : @Model.Address</span>
+        <p class="Location"><span class="icon"></span> Địa chỉ : @Model.Address <span class="Note">KH chú ý : Cạnh Showroom TOTO 391 Nguyễn Xiển có cửa hàng với biển hiệu TOTO nhưng không thuộc hệ thống phân phối chính hãng của chúng tôi. Vậy để đảm bảo mua được sản phẩm chính hãng khách hàng cần đến đúng địa chỉ</span></p>
         <span class="Hotline"><span class="icon"></span> Hotline :    
                 <span>@Model.HotlineIN</span>
         </span>
@@ -100,6 +100,9 @@
 }
     </div>
     <div class="Clear"></div>
+    <div id="imageFooter">
+        @Html.Raw(ViewBag.image)
+    </div>
     <div id="Box_Baogia">
         @Html.Raw(ViewBag.baogia)
      </div>
@@ -141,7 +144,19 @@
     <div id="LinkURL">
         @Html.Raw(ViewBag.chuoi)
     </div>
-   <div class="Clear"></div>
+    if(ViewBag.Chuoiimg != null && ViewBag.Chuoiimg!="")
+    {
+    <div id="adwfooter">
+        <div id="Banner_footer">
+            <div id="Content_Banner_Footer">
+                <span onclick="Tatquangcao(this)">×</span>
+
+                @Html.Raw(ViewBag.Chuoiimg)
+            </div>
+        </div>
+    </div>
+    }
+    <div class="Clear"></div>
 </div>
 @Html.Raw(ViewBag.results)
 
@@ -219,7 +234,7 @@
                 display: block;
             }
     </style>
-    if(ViewBag.Chuoiimg != null && ViewBag.Chuoiimg!="")
+   if(ViewBag.Chuoiimg != null && ViewBag.Chuoiimg!="")
     {
         <div id="adwfooter">
         <div id="Banner_footer">

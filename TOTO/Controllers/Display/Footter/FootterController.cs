@@ -65,6 +65,13 @@ namespace TOTO.Controllers.Display.Footter
 
             }
             ViewBag.results = Chuoiimg.ToString();
+            var listImages = db.tblImages.Where(p => p.Active == true && p.idCate == 10).Take(1).ToList();
+            if (listImages.Count > 0)
+            {
+                ViewBag.image= "<img src=\""+listImages[0].Images+ "\" alt=\"" + listImages[0].Name + "\" />";
+            }
+ 
+           
             return PartialView(tblconfig);
         }
         public ActionResult Command(FormCollection collection, tblRegister registry)

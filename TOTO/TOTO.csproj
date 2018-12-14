@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1364,6 +1365,7 @@
     <Content Include="Content\Display\Css\Maps.css" />
     <Content Include="Content\Display\Css\News.css" />
     <Content Include="Content\Display\Css\News_Rs.css" />
+    <Content Include="Content\Display\Css\nivo-slider.css" />
     <Content Include="Content\Display\Css\Order.css" />
     <Content Include="Content\Display\Css\Order_res.css" />
     <Content Include="Content\Display\Css\prettyPhoto.css" />
@@ -1376,10 +1378,12 @@
     <Content Include="Content\Display\iCon\Adw.png" />
     <Content Include="Content\Display\iCon\ADW_Left.png" />
     <Content Include="Content\Display\iCon\AMjanln.png" />
+    <Content Include="Content\Display\iCon\arrows.png" />
     <Content Include="Content\Display\iCon\Bancau.png" />
     <Content Include="Content\Display\iCon\Banner-times.png" />
     <Content Include="Content\Display\iCon\Banner_Sale_KM.png" />
     <Content Include="Content\Display\iCon\bg_bannner.png" />
+    <Content Include="Content\Display\iCon\bg_m.png" />
     <Content Include="Content\Display\iCon\bg_nvar-sale.png" />
     <Content Include="Content\Display\iCon\bg_Price-1.png" />
     <Content Include="Content\Display\iCon\bg_Price.png" />
@@ -1514,6 +1518,7 @@
     <Content Include="Content\Display\Js\crawler.js" />
     <Content Include="Content\Display\Js\jquery.js" />
     <Content Include="Content\Display\Js\jquery.mmenu.min.all.js" />
+    <Content Include="Content\Display\Js\jquery.nivo.slider.js" />
     <Content Include="Content\Display\Js\jquery.popup.js" />
     <Content Include="Content\Display\Js\jquery.prettyPhoto.js" />
     <Content Include="Content\Display\Js\PopupDetailProduct.js" />
@@ -1821,6 +1826,8 @@
     <Content Include="Views\support\Create.cshtml" />
     <Content Include="Views\support\Edit.cshtml" />
     <Content Include="Views\support\Index.cshtml" />
+    <Content Include="Views\Order\Success.cshtml" />
+    <Content Include="Views\Order\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

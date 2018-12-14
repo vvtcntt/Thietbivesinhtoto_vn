@@ -6,11 +6,15 @@
     <link type="text/css" rel="stylesheet" href="Css/slide.css" />
       <link type="text/css" rel="stylesheet" href="Css/Index_Rs.css" />
       <link type="text/css" rel="stylesheet" href="Css/linhnguyen.css" />
+            <link type="text/css" rel="stylesheet" href="Css/nivo-slider.css" />
+
     <link type="text/css" rel="stylesheet" href="Css/jquery.mmenu.all.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="text/javascript" src="../../Scripts/jquery-2.1.4.js"></script>
 	<script type="text/javascript" src="Js/Scroll.js"></script>
     <script type="text/javascript" src="Js/Adw.js"></script>
+        <script type="text/javascript" src="Js/jquery.nivo.slider.js"></script>
+
      <script type="text/javascript" src="Js/jquery.popup.js"></script>
     <script type="text/javascript" src="Js/jquery.mmenu.min.all.js"></script>
   <script type="text/javascript">
@@ -51,6 +55,11 @@
  
     }
     </script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+</script>
  </head>
 <body>
 <h1 class="h1">Thiết bị vệ sinh TOTO chính hãng giá rẻ nhất Việt Nam</h1>
@@ -231,19 +240,14 @@
 	<div id="Main">
     	<div id="Headder">
             <div id="Left_Headder">
-                <section id="slideshow">		 
-                    <div class="container">
-                        <div class="c_slider"></div>
-                        <div class="slider">
-                            <figure>
-                                <img src="iCon/Slide.png" alt=""    />
-                            </figure>
-                           <figure>
-                                <img src="iCon/Slide.png" alt=""   />
-                            </figure>
-                        </div>
-                    </div>
-                </section>
+                <div id="slide">
+            	<div class="slider-wrapper theme-default">
+                    <div id="slider" class="nivoSlider">
+                        <img src="iCon/Slide.png" data-thumb="iCon/Slide.png" alt="" />                      
+                        <img src="iCon/toilets_onepiece.jpg" data-thumb="images/Slide.png" alt="" data-transition="slideInLeft" />
+                     </div>            
+        		</div>
+            </div>
             </div>
         	<div id="Right_Headder">
             	 <div class="Tear_Adw" style="background:url(iCon/CATALOGUE.png) no-repeat">

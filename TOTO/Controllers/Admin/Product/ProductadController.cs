@@ -445,8 +445,6 @@ namespace TOTO.Controllers.Admin.Product
             {
                 return RedirectToAction("LoginIndex", "Login");
             }
-
-
             string nidCate = Collection["drMenu"];
             if (nidCate != "")
             {
@@ -649,7 +647,6 @@ namespace TOTO.Controllers.Admin.Product
         public ActionResult AutoCriteria(string idCate)
         {
             var result = string.Empty;
-
             int idCates = int.Parse(idCate);
             var Listconnectcre = db.tblGroupCriterias.Where(p => p.idCate == idCates).ToList();
             List<int> Mang = new List<int>();

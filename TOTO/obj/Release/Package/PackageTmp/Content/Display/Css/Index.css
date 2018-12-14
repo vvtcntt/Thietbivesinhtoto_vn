@@ -23,7 +23,15 @@ src:url(../Font/UTMChickenhawk.ttf);
 font-family:UTM_SwissCondensed; 
 src:url(../Font/UTM_SwissCondensed.ttf); 
 }
-ul,li{ padding:0px; margin:0px; outline:0px; vertical-align:baseline; border:0px}
+#imageFooter{width:100%; height:auto}
+    #imageFooter img{width:100%; height:auto}
+    ul, li {
+        padding: 0px;
+        margin: 0px;
+        outline: 0px;
+        vertical-align: baseline;
+        border: 0px
+    }
 ul,li{ list-style:none  }
 a{text-decoration:none}
 a:hover{color:#13439c !important}
@@ -269,7 +277,15 @@ footer{ width:100%; height:auto; float:left; margin:20px 0px 0px 0px; background
 .Tear_Info-1 .Name{ font-size:16px; margin:5px 0px 0px 4px; text-transform:uppercase; display:block; font-family:UTM_SwissCondensed; color:#383838}
 .Location { font-size:12px; color:#454444; margin:6px 2px; display:block}
 .Location .icon{ width:14px; height:12px; float:left; margin:3px 15px 2px 5px; background:url(../iCon/location.png) no-repeat}
-.Hotline { font-size:17px; color:#454444; margin:6px 2px; display:block; font-family:SwissCondensedBold; text-transform:uppercase}
+    .Location .Note{font-weight:bold; color:#ff3c00}
+    .Hotline {
+        font-size: 17px;
+        color: #454444;
+        margin: 6px 2px;
+        display: block;
+        font-family: SwissCondensedBold;
+        text-transform: uppercase
+    }
 .Hotline .icon{ width:25px; height:25px;; float:left; margin:2px 7px 1px 1px; background:url(../iCon/phone2x.gif) no-repeat; background-size:100%}
 .Phone { font-size:12px; color:#454444; margin:auto 2px; display:block; line-height:23px; width:100%; float:left} 
 .Phone .icon{ width:25px; height:19px; float:left; margin:3px 8px 2px 2px; background:url(../iCon/icon_hotline.png) no-repeat; background-size:100%}
@@ -501,15 +517,19 @@ filter: progid:DXImageTransform.Microsoft.Glow(Color=#ffffff,Strength=1);
     display: none
 }
 
-    #menuMobile span {
+#menuMobile span {
         color: #FFF;
         font-size: 14px;
         text-transform: uppercase;
         text-align: center;
         display: block;
         padding: 10px
-    }
+}
 
-        #menuMobile span i {
+#menuMobile span i {
             margin-right: 10px;
-        }
+}
+
+#success{width:460px; height:auto; margin:10px auto; padding:5px}
+#success p{font-size:15px; color:#242424; font-style:italic; margin:5px auto; text-align:center}
+#success h2{font-size:16px; font-weight:normal; text-align:center; margin:5px; text-transform:uppercase}
