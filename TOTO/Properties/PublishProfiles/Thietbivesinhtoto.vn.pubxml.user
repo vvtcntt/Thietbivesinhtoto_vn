@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>D:\PublicWeb\thietbivesinhtoto.vn</_PublishTargetUrl>
+    <_PublishTargetUrl>E:\PublicWeb\thietbivesinhtoto.vn</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -22,22 +22,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:49:21</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>12/14/2018 11:31:39</publishTime>
+      <publishTime>11/30/2019 07:57:13</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>12/14/2018 11:31:38</publishTime>
+      <publishTime>11/30/2019 07:57:13</publishTime>
     </File>
     <File Include="bin/CKEditor.NET.dll">
-      <publishTime>09/25/2017 16:00:02</publishTime>
+      <publishTime>11/07/2019 20:53:46</publishTime>
     </File>
     <File Include="bin/CKEditor.NET.pdb">
-      <publishTime>09/25/2017 16:00:02</publishTime>
+      <publishTime>11/07/2019 20:53:46</publishTime>
     </File>
     <File Include="bin/CKFinder.dll">
-      <publishTime>09/25/2017 16:00:02</publishTime>
+      <publishTime>11/07/2019 20:53:46</publishTime>
     </File>
     <File Include="bin/CKFinder.pdb">
-      <publishTime>09/25/2017 16:00:02</publishTime>
+      <publishTime>11/07/2019 20:53:46</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>10/23/2017 13:15:18</publishTime>
@@ -160,10 +160,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/28/2015 18:04:30</publishTime>
     </File>
     <File Include="bin/TOTO.dll">
-      <publishTime>12/14/2018 11:31:10</publishTime>
+      <publishTime>11/30/2019 07:56:47</publishTime>
     </File>
     <File Include="bin/TOTO.pdb">
-      <publishTime>12/14/2018 11:31:10</publishTime>
+      <publishTime>11/30/2019 07:56:47</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>09/11/2013 07:28:38</publishTime>
@@ -337,7 +337,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:51:16</publishTime>
     </File>
     <File Include="Content/ckeditor/ckeditor.js">
-      <publishTime>10/27/2017 13:51:16</publishTime>
+      <publishTime>11/05/2019 11:16:47</publishTime>
     </File>
     <File Include="Content/ckeditor/config.js">
       <publishTime>10/27/2017 13:51:16</publishTime>
@@ -350,6 +350,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/ckeditor/lang/ar.js">
       <publishTime>10/27/2017 13:51:16</publishTime>
+    </File>
+    <File Include="Content/ckeditor/lang/az.js">
+      <publishTime>11/07/2019 20:53:49</publishTime>
     </File>
     <File Include="Content/ckeditor/lang/bg.js">
       <publishTime>10/27/2017 13:51:16</publishTime>
@@ -372,6 +375,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckeditor/lang/da.js">
       <publishTime>10/27/2017 13:51:16</publishTime>
     </File>
+    <File Include="Content/ckeditor/lang/de-ch.js">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
     <File Include="Content/ckeditor/lang/de.js">
       <publishTime>10/27/2017 13:51:16</publishTime>
     </File>
@@ -392,6 +398,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/ckeditor/lang/eo.js">
       <publishTime>10/27/2017 13:51:16</publishTime>
+    </File>
+    <File Include="Content/ckeditor/lang/es-mx.js">
+      <publishTime>11/07/2019 20:53:49</publishTime>
     </File>
     <File Include="Content/ckeditor/lang/es.js">
       <publishTime>10/27/2017 13:51:17</publishTime>
@@ -483,6 +492,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckeditor/lang/no.js">
       <publishTime>10/27/2017 13:51:17</publishTime>
     </File>
+    <File Include="Content/ckeditor/lang/oc.js">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
     <File Include="Content/ckeditor/lang/pl.js">
       <publishTime>10/27/2017 13:51:17</publishTime>
     </File>
@@ -546,6 +558,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckeditor/LICENSE.md">
       <publishTime>10/27/2017 13:51:18</publishTime>
     </File>
+    <File Include="Content/ckeditor/package.json">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
     <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js">
       <publishTime>10/27/2017 13:51:18</publishTime>
     </File>
@@ -554,6 +569,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js">
       <publishTime>10/27/2017 13:51:18</publishTime>
+    </File>
+    <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/az.js">
+      <publishTime>11/07/2019 20:53:49</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js">
       <publishTime>10/27/2017 13:51:18</publishTime>
@@ -570,11 +588,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/da.js">
       <publishTime>10/27/2017 13:51:18</publishTime>
     </File>
+    <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
     <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/de.js">
       <publishTime>10/27/2017 13:51:18</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/el.js">
       <publishTime>10/27/2017 13:51:18</publishTime>
+    </File>
+    <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js">
+      <publishTime>11/07/2019 20:53:49</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js">
       <publishTime>10/27/2017 13:51:18</publishTime>
@@ -585,11 +609,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js">
       <publishTime>10/27/2017 13:51:18</publishTime>
     </File>
+    <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
     <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/es.js">
       <publishTime>10/27/2017 13:51:18</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/et.js">
       <publishTime>10/27/2017 13:51:18</publishTime>
+    </File>
+    <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js">
+      <publishTime>11/07/2019 20:53:49</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js">
       <publishTime>10/27/2017 13:51:18</publishTime>
@@ -662,6 +692,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/no.js">
       <publishTime>10/27/2017 13:51:19</publishTime>
+    </File>
+    <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js">
+      <publishTime>11/07/2019 20:53:49</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js">
       <publishTime>10/27/2017 13:51:19</publishTime>
@@ -738,8 +771,20 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckeditor/plugins/clipboard/dialogs/paste.js">
       <publishTime>10/27/2017 13:51:19</publishTime>
     </File>
+    <File Include="Content/ckeditor/plugins/colordialog/dialogs/colordialog.css">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
     <File Include="Content/ckeditor/plugins/colordialog/dialogs/colordialog.js">
       <publishTime>10/27/2017 13:51:19</publishTime>
+    </File>
+    <File Include="Content/ckeditor/plugins/copyformatting/cursors/cursor-disabled.svg">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
+    <File Include="Content/ckeditor/plugins/copyformatting/cursors/cursor.svg">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
+    <File Include="Content/ckeditor/plugins/copyformatting/styles/copyformatting.css">
+      <publishTime>11/07/2019 20:53:49</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/dialog/dialogDefinition.js">
       <publishTime>10/27/2017 13:51:19</publishTime>
@@ -805,7 +850,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:51:20</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/link/dialogs/link.js">
-      <publishTime>10/27/2017 13:51:20</publishTime>
+      <publishTime>11/05/2019 11:16:47</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/link/images/anchor.png">
       <publishTime>10/27/2017 13:51:20</publishTime>
@@ -837,6 +882,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckeditor/plugins/preview/preview.html">
       <publishTime>10/27/2017 13:51:20</publishTime>
     </File>
+    <File Include="Content/ckeditor/plugins/scayt/CHANGELOG.md">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
+    <File Include="Content/ckeditor/plugins/scayt/dialogs/dialog.css">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
     <File Include="Content/ckeditor/plugins/scayt/dialogs/options.js">
       <publishTime>10/27/2017 13:51:20</publishTime>
     </File>
@@ -848,6 +899,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/ckeditor/plugins/scayt/README.md">
       <publishTime>10/27/2017 13:51:20</publishTime>
+    </File>
+    <File Include="Content/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css">
+      <publishTime>11/07/2019 20:53:49</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/showblocks/images/block_address.png">
       <publishTime>10/27/2017 13:51:20</publishTime>
@@ -1023,6 +1077,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/ar.js">
       <publishTime>10/27/2017 13:51:20</publishTime>
     </File>
+    <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/az.js">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
     <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/bg.js">
       <publishTime>10/27/2017 13:51:20</publishTime>
     </File>
@@ -1038,11 +1095,20 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/da.js">
       <publishTime>10/27/2017 13:51:20</publishTime>
     </File>
+    <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
     <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/de.js">
       <publishTime>10/27/2017 13:51:20</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/el.js">
       <publishTime>10/27/2017 13:51:20</publishTime>
+    </File>
+    <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/en-au.js">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js">
+      <publishTime>11/07/2019 20:53:50</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js">
       <publishTime>10/27/2017 13:51:20</publishTime>
@@ -1053,11 +1119,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/eo.js">
       <publishTime>10/27/2017 13:51:20</publishTime>
     </File>
+    <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
     <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/es.js">
       <publishTime>10/27/2017 13:51:21</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/et.js">
       <publishTime>10/27/2017 13:51:21</publishTime>
+    </File>
+    <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/eu.js">
+      <publishTime>11/07/2019 20:53:50</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/fa.js">
       <publishTime>10/27/2017 13:51:21</publishTime>
@@ -1116,6 +1188,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/no.js">
       <publishTime>10/27/2017 13:51:21</publishTime>
     </File>
+    <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/oc.js">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
     <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/pl.js">
       <publishTime>10/27/2017 13:51:21</publishTime>
     </File>
@@ -1124,6 +1199,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/pt.js">
       <publishTime>10/27/2017 13:51:22</publishTime>
+    </File>
+    <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/ro.js">
+      <publishTime>11/07/2019 20:53:50</publishTime>
     </File>
     <File Include="Content/ckeditor/plugins/specialchar/dialogs/lang/ru.js">
       <publishTime>10/27/2017 13:51:22</publishTime>
@@ -1176,6 +1254,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckeditor/plugins/table/dialogs/table.js">
       <publishTime>10/27/2017 13:51:22</publishTime>
     </File>
+    <File Include="Content/ckeditor/plugins/tableselection/styles/tableselection.css">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
     <File Include="Content/ckeditor/plugins/tabletools/dialogs/tableCell.js">
       <publishTime>10/27/2017 13:51:22</publishTime>
     </File>
@@ -1197,6 +1278,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckeditor/plugins/templates/templates/images/template3.gif">
       <publishTime>10/27/2017 13:51:22</publishTime>
     </File>
+    <File Include="Content/ckeditor/plugins/widget/images/handle.png">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
     <File Include="Content/ckeditor/plugins/wsc/dialogs/ciframe.html">
       <publishTime>10/27/2017 13:51:22</publishTime>
     </File>
@@ -1217,6 +1301,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/ckeditor/plugins/wsc/README.md">
       <publishTime>10/27/2017 13:51:22</publishTime>
+    </File>
+    <File Include="Content/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css">
+      <publishTime>11/07/2019 20:53:50</publishTime>
     </File>
     <File Include="Content/ckeditor/README.md">
       <publishTime>10/27/2017 13:51:22</publishTime>
@@ -1413,6 +1500,72 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js">
       <publishTime>10/27/2017 13:51:24</publishTime>
     </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/dialog.css">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/dialog_ie.css">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/dialog_ie8.css">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/dialog_iequirks.css">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/editor.css">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/editor_gecko.css">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/editor_ie.css">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/editor_ie8.css">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/editor_iequirks.css">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/icons.png">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/icons_hidpi.png">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/images/arrow.png">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/images/close.png">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/images/hidpi/close.png">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/images/hidpi/lock.png">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/images/hidpi/refresh.png">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/images/lock-open.png">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/images/lock.png">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/images/refresh.png">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/images/spinner.gif">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
+    <File Include="Content/ckeditor/skins/moono-lisa/readme.md">
+      <publishTime>11/07/2019 20:53:50</publishTime>
+    </File>
     <File Include="Content/ckeditor/skins/moono/dialog.css">
       <publishTime>10/27/2017 13:51:24</publishTime>
     </File>
@@ -1487,6 +1640,21 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/ckeditor/styles.js">
       <publishTime>10/27/2017 13:51:25</publishTime>
+    </File>
+    <File Include="Content/ckfinder/bin/Debug/CKEditor.NET.dll">
+      <publishTime>11/07/2019 20:53:46</publishTime>
+    </File>
+    <File Include="Content/ckfinder/bin/Debug/CKEditor.NET.pdb">
+      <publishTime>11/07/2019 20:53:46</publishTime>
+    </File>
+    <File Include="Content/ckfinder/bin/Debug/CKFinder.dll">
+      <publishTime>11/07/2019 20:53:46</publishTime>
+    </File>
+    <File Include="Content/ckfinder/bin/Debug/CKFinder.pdb">
+      <publishTime>11/07/2019 20:53:46</publishTime>
+    </File>
+    <File Include="Content/ckfinder/bin/Release/CKFinder.dll">
+      <publishTime>11/07/2019 20:53:46</publishTime>
     </File>
     <File Include="Content/ckfinder/changelog.txt">
       <publishTime>10/27/2017 13:51:25</publishTime>
@@ -2589,6 +2757,18 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckfinder/plugins/dummy/plugin.js">
       <publishTime>10/27/2017 13:51:29</publishTime>
     </File>
+    <File Include="Content/ckfinder/plugins/fileeditor/bin/Debug/CKFinder_FileEditor.dll">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
+    <File Include="Content/ckfinder/plugins/fileeditor/bin/Debug/CKFinder_FileEditor.pdb">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
+    <File Include="Content/ckfinder/plugins/fileeditor/bin/Release/CKFinder_FileEditor.dll">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
+    <File Include="Content/ckfinder/plugins/fileeditor/bin/Release/CKFinder_FileEditor.pdb">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
     <File Include="Content/ckfinder/plugins/fileeditor/codemirror/addon/mode/overlay.js">
       <publishTime>10/27/2017 13:51:29</publishTime>
     </File>
@@ -2700,11 +2880,35 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckfinder/plugins/gallery/colorbox/license.txt">
       <publishTime>10/27/2017 13:51:31</publishTime>
     </File>
+    <File Include="Content/ckfinder/plugins/imageresize/bin/Debug/CKFinder_ImageResize.dll">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
+    <File Include="Content/ckfinder/plugins/imageresize/bin/Debug/CKFinder_ImageResize.pdb">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
+    <File Include="Content/ckfinder/plugins/imageresize/bin/Release/CKFinder_ImageResize.dll">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
+    <File Include="Content/ckfinder/plugins/imageresize/bin/Release/CKFinder_ImageResize.pdb">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
     <File Include="Content/ckfinder/plugins/imageresize/images/mini.gif">
       <publishTime>10/27/2017 13:51:31</publishTime>
     </File>
     <File Include="Content/ckfinder/plugins/imageresize/plugin.js">
       <publishTime>10/27/2017 13:51:31</publishTime>
+    </File>
+    <File Include="Content/ckfinder/plugins/watermark/bin/Debug/CKFinder_Watermark.dll">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
+    <File Include="Content/ckfinder/plugins/watermark/bin/Debug/CKFinder_Watermark.pdb">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
+    <File Include="Content/ckfinder/plugins/watermark/bin/Release/CKFinder_Watermark.dll">
+      <publishTime>11/07/2019 20:53:49</publishTime>
+    </File>
+    <File Include="Content/ckfinder/plugins/watermark/bin/Release/CKFinder_Watermark.pdb">
+      <publishTime>11/07/2019 20:53:49</publishTime>
     </File>
     <File Include="Content/ckfinder/plugins/watermark/logo.gif">
       <publishTime>10/27/2017 13:51:31</publishTime>
@@ -3226,7 +3430,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:51:11</publishTime>
     </File>
     <File Include="Content/Display/Css/Index.css">
-      <publishTime>09/19/2018 16:43:35</publishTime>
+      <publishTime>10/30/2019 15:14:03</publishTime>
     </File>
     <File Include="Content/Display/Css/Index_Rs.css">
       <publishTime>10/27/2017 13:51:11</publishTime>
@@ -3269,6 +3473,27 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/Display/Css/slide.css">
       <publishTime>10/27/2017 13:51:11</publishTime>
+    </File>
+    <File Include="Content/Display/Css/update/call.css">
+      <publishTime>10/26/2019 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Display/Css/update/owl.carousel.min.css">
+      <publishTime>04/10/2017 22:44:32</publishTime>
+    </File>
+    <File Include="Content/Display/Css/update/owl.theme.default.min.css">
+      <publishTime>03/17/2017 22:13:34</publishTime>
+    </File>
+    <File Include="Content/Display/Css/update/Popup_ud.css">
+      <publishTime>11/24/2019 21:09:25</publishTime>
+    </File>
+    <File Include="Content/Display/Css/update/product.css">
+      <publishTime>11/07/2019 21:16:11</publishTime>
+    </File>
+    <File Include="Content/Display/Css/update/sale.css">
+      <publishTime>11/12/2019 15:01:54</publishTime>
+    </File>
+    <File Include="Content/Display/Css/update/times.css">
+      <publishTime>11/04/2019 14:39:39</publishTime>
     </File>
     <File Include="Content/Display/data.html">
       <publishTime>10/27/2017 13:51:11</publishTime>
@@ -3750,6 +3975,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/Display/iCon/TOTOERRO.png">
       <publishTime>10/27/2017 13:51:13</publishTime>
     </File>
+    <File Include="Content/Display/iCon/update/calling.gif">
+      <publishTime>10/26/2019 14:47:08</publishTime>
+    </File>
+    <File Include="Content/Display/iCon/update/hinhtron.png">
+      <publishTime>08/22/2018 03:26:30</publishTime>
+    </File>
     <File Include="Content/Display/iCon/Viber_logo.png">
       <publishTime>10/27/2017 13:51:13</publishTime>
     </File>
@@ -3763,7 +3994,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:51:13</publishTime>
     </File>
     <File Include="Content/Display/Index.html">
-      <publishTime>12/14/2018 10:29:28</publishTime>
+      <publishTime>11/24/2019 21:11:15</publishTime>
     </File>
     <File Include="Content/Display/Js/Adw.js">
       <publishTime>10/27/2017 13:51:13</publishTime>
@@ -3791,6 +4022,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/Display/Js/Scroll.js">
       <publishTime>10/27/2017 13:51:13</publishTime>
+    </File>
+    <File Include="Content/Display/Js/update/jquery.popupMiendatweb.min.js">
+      <publishTime>08/22/2018 03:26:30</publishTime>
+    </File>
+    <File Include="Content/Display/Js/update/owl.carousel.min.js">
+      <publishTime>03/17/2017 22:13:35</publishTime>
+    </File>
+    <File Include="Content/Display/Js/update/script.js">
+      <publishTime>10/30/2019 08:48:06</publishTime>
     </File>
     <File Include="Content/Display/ListNews.html">
       <publishTime>10/27/2017 13:51:13</publishTime>
@@ -3847,7 +4087,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 14:13:25</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>12/14/2018 11:31:17</publishTime>
+      <publishTime>11/30/2019 07:56:53</publishTime>
     </File>
     <File Include="Scripts/ai.0.22.9-build00167.js">
       <publishTime>10/27/2017 13:49:22</publishTime>
@@ -4108,7 +4348,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:58:17</publishTime>
     </File>
     <File Include="Views/Config/Index.cshtml">
-      <publishTime>11/08/2017 15:59:37</publishTime>
+      <publishTime>11/13/2019 06:44:13</publishTime>
     </File>
     <File Include="Views/Contact/Index.cshtml">
       <publishTime>10/27/2017 13:58:17</publishTime>
@@ -4140,8 +4380,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Errors/NotFound.cshtml">
       <publishTime>10/27/2017 13:58:18</publishTime>
     </File>
+    <File Include="Views/Footter/callPartial.cshtml">
+      <publishTime>11/24/2019 21:30:00</publishTime>
+    </File>
     <File Include="Views/Footter/ControlFootter.cshtml">
-      <publishTime>09/21/2018 16:29:55</publishTime>
+      <publishTime>11/30/2019 07:56:10</publishTime>
     </File>
     <File Include="Views/Footter/MenuMobine.cshtml">
       <publishTime>10/27/2017 13:58:18</publishTime>
@@ -4201,16 +4444,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:58:18</publishTime>
     </File>
     <File Include="Views/Header/ParitalMenuWidth.cshtml">
-      <publishTime>10/27/2017 13:58:18</publishTime>
+      <publishTime>11/05/2019 15:27:12</publishTime>
     </File>
     <File Include="Views/Header/PartialBanner.cshtml">
-      <publishTime>11/08/2017 16:06:19</publishTime>
+      <publishTime>03/04/2019 10:04:42</publishTime>
     </File>
     <File Include="Views/Header/PartialSearch.cshtml">
       <publishTime>10/27/2017 13:58:18</publishTime>
     </File>
     <File Include="Views/Header/Partialsidebar.cshtml">
-      <publishTime>10/27/2017 13:58:18</publishTime>
+      <publishTime>03/04/2019 16:00:44</publishTime>
     </File>
     <File Include="Views/Header/PatialHeader.cshtml">
       <publishTime>12/14/2018 10:38:56</publishTime>
@@ -4372,7 +4615,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:58:21</publishTime>
     </File>
     <File Include="Views/Product/PartialRightProductDetail.cshtml">
-      <publishTime>05/26/2018 15:53:16</publishTime>
+      <publishTime>11/13/2019 06:48:23</publishTime>
     </File>
     <File Include="Views/Product/ProductDetail.cshtml">
       <publishTime>10/02/2018 13:45:42</publishTime>
@@ -4390,7 +4633,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:58:22</publishTime>
     </File>
     <File Include="Views/Productad/Index.cshtml">
-      <publishTime>10/27/2017 13:58:22</publishTime>
+      <publishTime>11/09/2019 10:39:18</publishTime>
     </File>
     <File Include="Views/Productad/ListFiles.cshtml">
       <publishTime>10/27/2017 13:58:22</publishTime>
@@ -4399,7 +4642,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:58:22</publishTime>
     </File>
     <File Include="Views/Productad/PartialProductData.cshtml">
-      <publishTime>10/27/2017 13:58:22</publishTime>
+      <publishTime>11/09/2019 10:38:18</publishTime>
     </File>
     <File Include="Views/Productad/ProductCheck.cshtml">
       <publishTime>10/27/2017 13:58:22</publishTime>
@@ -4417,22 +4660,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:58:22</publishTime>
     </File>
     <File Include="Views/ProductSYNad/Edit.cshtml">
-      <publishTime>10/27/2017 13:58:22</publishTime>
+      <publishTime>11/07/2019 20:48:58</publishTime>
     </File>
     <File Include="Views/ProductSYNad/Index.cshtml">
-      <publishTime>10/27/2017 13:58:22</publishTime>
+      <publishTime>11/16/2019 10:20:57</publishTime>
     </File>
     <File Include="Views/ProductSynDisplay/Hienthidongbo.cshtml">
       <publishTime>10/27/2017 13:58:22</publishTime>
     </File>
     <File Include="Views/ProductSynDisplay/ListProductSyn.cshtml">
-      <publishTime>10/27/2017 13:58:22</publishTime>
+      <publishTime>11/07/2019 20:39:52</publishTime>
     </File>
     <File Include="Views/ProductSynDisplay/ProductSyn_Detail.cshtml">
-      <publishTime>10/27/2017 13:58:22</publishTime>
+      <publishTime>11/07/2019 21:31:57</publishTime>
     </File>
     <File Include="Views/ProductSynDisplay/RightProductSyn.cshtml">
-      <publishTime>10/27/2017 13:58:22</publishTime>
+      <publishTime>11/13/2019 06:48:57</publishTime>
+    </File>
+    <File Include="Views/Sale/details.cshtml">
+      <publishTime>11/15/2019 22:45:10</publishTime>
+    </File>
+    <File Include="Views/Sale/ListSale.cshtml">
+      <publishTime>11/05/2019 15:37:07</publishTime>
     </File>
     <File Include="Views/SendEmail/Create.cshtml">
       <publishTime>10/27/2017 13:58:22</publishTime>
@@ -4459,13 +4708,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:48:53</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutAdmin.cshtml">
-      <publishTime>10/27/2017 14:20:39</publishTime>
+      <publishTime>11/09/2019 10:35:36</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutCompetitor.cshtml">
       <publishTime>10/27/2017 14:15:57</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutDefault.cshtml">
-      <publishTime>12/14/2018 11:30:35</publishTime>
+      <publishTime>11/15/2019 22:15:10</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutLogin.cshtml">
       <publishTime>10/27/2017 14:15:57</publishTime>
@@ -4531,7 +4780,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/27/2017 13:48:53</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/10/2018 17:33:23</publishTime>
+      <publishTime>11/09/2019 10:57:24</publishTime>
     </File>
   </ItemGroup>
 </Project>

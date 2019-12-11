@@ -37,6 +37,9 @@ namespace TOTO.Controllers.Display
                 ViewBag.Thongbao = Session["registry"].ToString();
             }
             Session["registry"] = null;
+            //string pass= "HmCWRrP8iFYfKSg1ltBh/IX4iE+GI0oSboe18785P0o=";
+            //string nPass=EncryptandDecrypt.Decrypt(pass);
+            
             return View();
         }
         public PartialViewResult AdwLeftRight()

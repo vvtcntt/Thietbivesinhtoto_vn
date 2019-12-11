@@ -96,7 +96,7 @@ namespace TOTO.Controllers.Admin.Product
 
             }
         }
-        public ActionResult UpdateProductsyn(string id, string Active, string Ord)
+        public ActionResult UpdateProductsyn(string id, string Ord, string chkHome, string Active)
         {
             if (ClsCheckRole.CheckQuyen(6, 2, int.Parse(Request.Cookies["Username"].Values["UserID"])) == true)
             {
@@ -104,6 +104,8 @@ namespace TOTO.Controllers.Admin.Product
                 int ids = int.Parse(id);
                 var tblProductsyn = db.tblProductSyns.Find(ids);
                 tblProductsyn.Active = bool.Parse(Active);
+                tblProductsyn.ViewHomes = bool.Parse(chkHome);
+
                 tblProductsyn.Ord = int.Parse(Ord);
                 db.SaveChanges();
                 var result = string.Empty;

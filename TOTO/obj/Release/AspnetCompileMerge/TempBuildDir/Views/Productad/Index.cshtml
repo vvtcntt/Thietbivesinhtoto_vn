@@ -110,6 +110,9 @@
         var chkHome;
         if ($j(linkUpdateId).closest('tr').children(".Viewhomes").children("#chkHome:checked").is(':checked')) { chkHome = 'true'; }
         else { chkHome = 'false'; }
+        var chkPriority;
+          if ($j(linkUpdateId).closest('tr').children(".Priority").children("#chkPriority:checked").is(':checked')) { chkPriority = 'true'; }
+        else { chkPriority = 'false'; }
         console.log(price);
         console.log(salePrice);
         price = ConvertPrice(price, culture);
@@ -126,7 +129,8 @@
                             "'ordernumber':'" + orderNumber + "'," +
                             "'cbIsActive':'" + cbIsActive + "'," +
                              "'chkHome':'" + chkHome + "'," +
-                             "'chkSale':'" + chkSale + "'," +
+            "'chkSale':'" + chkSale + "'," +
+             "'chkPriority':'" + chkPriority + "'," +
                               "'chkPri':'" + chkPri + "'," +
                             "'code':'" + code + "'," +
                            "'Status':'" + status + "'," +

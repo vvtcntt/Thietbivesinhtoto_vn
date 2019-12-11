@@ -109,7 +109,7 @@ namespace TOTO.Controllers.Admin.Product
 
         public PartialViewResult PartialProductData(int? page, string text, string idCate, string pageSizes)
         {
-            var listProduct = db.tblProducts.OrderByDescending(p => p.DateCreate).ToList();
+            var listProduct = db.tblProducts.OrderByDescending(p => p.DateCreate).Take(10).ToList();
             int pageSize = 20;
             var pageNumber = (page ?? 1);
             var ship = new PagedListRenderOptions
@@ -170,7 +170,7 @@ namespace TOTO.Controllers.Admin.Product
                  
                 else
                 {
-                    listProduct = db.tblProducts.OrderByDescending(p => p.Ord).ToList();
+                    listProduct = db.tblProducts.OrderByDescending(p => p.Ord).Take(10).ToList();
 
                 }
 
@@ -217,13 +217,13 @@ namespace TOTO.Controllers.Admin.Product
             else
             {
                 ViewBag.ddlMenu = carlist;
-                listProduct = db.tblProducts.Where(p => p.Active == true).OrderByDescending(p => p.DateCreate).ToList();
+                listProduct = db.tblProducts.Where(p => p.Active == true).OrderByDescending(p => p.DateCreate).Take(10).ToList();
                 return PartialView(listProduct.ToPagedList(pageNumber, pageSize));
             }
 
             return PartialView(listProduct.ToPagedList(pageNumber, pageSize));
         }
-        public ActionResult UpdateInfoProduct(string code,string productid,string chkPri, string price, string saleprice, string cbIsActive, string chkHome, string chkSale, string ordernumber, string idCate, string Status)
+        public ActionResult UpdateInfoProduct(string code,string productid,string chkPri, string price, string saleprice, string cbIsActive, string chkHome, string chkSale, string chkPriority, string ordernumber, string idCate, string Status)
         {
             if (ClsCheckRole.CheckQuyen(4, 2, int.Parse(Request.Cookies["Username"].Values["UserID"])) == true)
             {
@@ -236,6 +236,7 @@ namespace TOTO.Controllers.Admin.Product
                 Product.ViewHomes = bool.Parse(chkHome);
                 Product.Active = bool.Parse(cbIsActive);
                 Product.ProductSale = bool.Parse(chkSale);
+                Product.Priority = bool.Parse(chkPriority);
                 Product.idCate = int.Parse(idCate);
                 int idcates = int.Parse(idCate); ;
                 int Ord = int.Parse(ordernumber);

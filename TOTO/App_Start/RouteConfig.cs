@@ -27,6 +27,8 @@ namespace TOTO
             routes.MapRoute("Chi_Tiet_2", "vn/{tag1}/{tag}_{idp}.html", new { controller = "Product", action = "ProductDetail", tag = UrlParameter.Optional }, new { controller = "^P.*", action = "^ProductDetail$" });
             routes.MapRoute("Chi_Tiet_3", "{tag}_{idp}.html", new { controller = "Product", action = "ProductDetail", tag = UrlParameter.Optional }, new { controller = "^P.*", action = "^ProductDetail$" });
             routes.MapRoute("Chi_Tiet_4", "{tag}-pd", new { controller = "Product", action = "ProductDetail", tag = UrlParameter.Optional }, new { controller = "^P.*", action = "^ProductDetail$" });
+            routes.MapRoute("Khuyen-mai", "Khuyen-mai", new { controller = "Sale", action = "details", tag = UrlParameter.Optional }, new { controller = "^S.*", action = "^details$" });
+            //routes.MapRoute("Detail", "Detail", new { controller = "Sale", action = "Detail", tag = UrlParameter.Optional }, new { controller = "^S.*", action = "^Detail$" });
 
             routes.MapRoute("ProductList-3", "{tag}.html", new { controller = "Product", action = "ListProduct", tag = UrlParameter.Optional }, new { controller = "^P.*", action = "^ListProduct$" });
 

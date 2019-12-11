@@ -52,11 +52,14 @@
         var orderNumber = $j(linkUpdateId).closest('tr').children(".OrderNumber").children("#txtOrderNumber").val();
 
         var Active;
-        if ($j(linkUpdateId).closest('tr').children(".Active").children("#Active:checked").is(':checked')) { Active = 'true'; }
+        if ($j(linkUpdateId).closest('tr').children(".Active").children("#cbIsActive:checked").is(':checked')) { Active = 'true'; }
         else { Active = 'false'; }
-
+         var chkHome;
+        if ($j(linkUpdateId).closest('tr').children(".Viewhomes").children("#chkHome:checked").is(':checked')) { chkHome = 'true'; }
+        else { chkHome = 'false'; }
         var querystring = "{ 'id':'" + pId + "'," +
-                            "'Ord':'" + orderNumber + "'," +
+            "'Ord':'" + orderNumber + "'," +
+                        "'chkHome':'" + chkHome + "'," +
                             "'Active':'" + Active + "' }";
 
         $j.ajax({
